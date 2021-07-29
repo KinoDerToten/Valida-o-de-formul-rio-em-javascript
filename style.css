@@ -1,0 +1,52 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Verdana', sans-serif;
+}
+
+body{
+    background-image: url(assets/background-body.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container{
+    width: 550px;
+    margin: auto;
+    margin-top: 75px;
+    background-color:#FFF;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.container form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.container h1 {
+    color: rgb(128, 126, 126);
+    text-align: center;
+}
+
+.container input{
+    border:none;
+    border-bottom: 1px solid red;
+}
+
+.half-box{
+    margin-left: 40px;
+}
+
+.half-box input{
+    width: 80%;
+}
+
+.container-item{
+    width: 70px;
+    margin: auto;
+    margin-top: 30px;
+}

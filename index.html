@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="formulario.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Cadastro</h1>
+        <form action="">
+            <div class="half-box">
+                <label for="nome">Nome</label><br>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+            </div>
+            
+            <div class="half-box">
+                <label for="sobrenome">Sobrenome</label><br>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome">
+            </div>
+
+            <div class="half-box">
+                <label for="login">Login</label><br>
+                <input type="text" name="login" id="login" placeholder="Digite seu nome de usuário">
+            </div>
+
+            <div class="half-box">
+                <label for="email">E-mail</label><br>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+            </div>
+
+            <div class="half-box">
+                <label for="email">Senha</label><br>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+            </div>
+            
+            <div class="half-box">
+                <label for="confirmar_senha">Confirmar senha</label><br>
+                <input type="password" name="confirmar_senha" id="confirmar_senha" placeholder="Confirme sua senha">
+            </div>
+
+            <div class="half-box">
+                <label for="data_de_nascimento">Data de nascimento</label><br>
+                <input type="date" name="data_de_nascimento" id="data_de_nascimento" required>
+            </div>
+
+            <div class="half-box">
+                <label for="telefone">Telefone</label><br>
+                <input type="tel" name="telefone" id="telefone" placeholder="Digite seu número de telefone">
+            </div>
+        </form>
+        <div class="container-item">
+            <button id="registrar">Registrar</button>
+        </div>
+    </div>
+    
+</body>
+</html>
