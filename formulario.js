@@ -1,62 +1,39 @@
 onload = () => {
-    document.getElementById('registrar').onclick = () => {
-        var nome = document.getElementById('nome').value;
-        var sobrenome = document.getElementById('sobrenome').value;
-        var login = document.getElementById('login').value;
-        var email = document.getElementById('email').value;
-        var senha = document.getElementById('senha').value;
-        var confirmar_senha = document.getElementById('confirmar_senha').value;
-        var telefone = document.getElementById('telefone').value;
+    document.getElementById("registrar").onclick = validarRegistro;
+}
 
-        if (nome == "") {
-            alert("Nome não informado")
+const validarRegistro = () => {
 
-            nome.focus();
-            return;
-        }
+    let nome = document.getElementById("nome").value;
+    let sobrenome = document.getElementById("sobrenome").value;
+    let login = document.getElementById("login").value;
+    let email = document.getElementById("email").value;
+    let senha = document.getElementById("senha").value;
+    let confirmar_senha = document.getElementById("confirmar_senha").value;
+    let telefone = document.getElementById("telefone").value;
 
-        if (sobrenome == "") {
-            alert("Nome não informado")
-
-            sobrenome.focus();
-            return;
-        }
-
-        if (login == "") {
-            alert("Nome não informado")
-
-            login.focus();
-            return;
-        }
-
-        if (email == "") {
-            alert("Nome não informado")
-
-            email.focus();
-            return;
-        }
-
-        if (senha == "") {
-            alert("Nome não informado")
-
-            senha.focus();
-            return;
-        }
-
-        if (confirmar_senha == "") {
-            alert("Nome não informado")
-
-            confimar_senha.focus();
-            return;
-        }
-
-        if (telefone == "") {
-            alert("Nome não informado")
-
-            telefone.focus();
-            return;
-        }
-
-        alert("Registro feito com sucesso!!!");
-    };
+    if (nome == "") {
+        alert('Necessário preencher o campo nome');
+        document.getElementById("nome").focus();
+    } else if (sobrenome == "") {
+        alert('Necessário preencher o campo sobrenome');
+        document.getElementById("sobrenome").focus();
+    } else if (login == "") {
+        alert('Necessário preencher o campo login');
+        document.getElementById("login").focus();
+    } else if (email == "") {
+        alert('Necessário preencher o campo email');
+        document.getElementById("email").focus();
+    } else if (senha == "") {
+        alert('Necessário preencher o campo senha');
+        document.getElementById("senha").focus();
+    } else if (confirmar_senha == "") {
+        alert('Necessário preencher o campo confirmar senha');
+        document.getElementById("confirmar_senha").focus();
+    } else if (telefone == "") {
+        alert('Necessário preencher o campo telefone');
+        document.getElementById("telefone").focus();
+    } else {
+        alert('Registro feito com sucesso!!!');
+    }
 }
